@@ -24,7 +24,7 @@ param hubNetworks = [
     name: 'vnet-alz-${parLocations[0]}'
     location: parLocations[0]
     addressPrefixes: [
-      '10.0.0.0/22'
+      '172.16.0.0/22'
     ]
     deployPeering: true
     dnsServers: []
@@ -40,28 +40,28 @@ param hubNetworks = [
     subnets: [
       {
         name: 'AzureBastionSubnet'
-        addressPrefix: '10.0.0.64/26'
+        addressPrefix: '172.16.0.64/26'
       }
       {
         name: 'GatewaySubnet'
-        addressPrefix: '10.0.0.128/27'
+        addressPrefix: '172.16.0.128/27'
       }
       {
         name: 'AzureFirewallSubnet'
-        addressPrefix: '10.0.0.0/26'
+        addressPrefix: '172.16.0.0/26'
       }
       {
         name: 'AzureFirewallManagementSubnet'
-        addressPrefix: '10.0.0.192/26'
+        addressPrefix: '172.16.0.192/26'
       }
       {
         name: 'DNSPrivateResolverInboundSubnet'
-        addressPrefix: '10.0.0.160/28'
+        addressPrefix: '172.16.0.160/28'
         delegation: 'Microsoft.Network/dnsResolvers'
       }
       {
         name: 'DNSPrivateResolverOutboundSubnet'
-        addressPrefix: '10.0.0.176/28'
+        addressPrefix: '172.16.0.176/28'
         delegation: 'Microsoft.Network/dnsResolvers'
       }
     ]
@@ -108,7 +108,7 @@ param hubNetworks = [
     name: 'vnet-alz-${parLocations[1]}'
     location: parLocations[1]
     addressPrefixes: [
-      '10.1.0.0/22'
+      '172.16.4.0/22'
     ]
     deployPeering: true
     dnsServers: []
@@ -124,28 +124,28 @@ param hubNetworks = [
     subnets: [
       {
         name: 'AzureBastionSubnet'
-        addressPrefix: '10.1.0.64/26'
+        addressPrefix: '172.16.4.64/26'
       }
       {
         name: 'GatewaySubnet'
-        addressPrefix: '10.1.0.128/27'
+        addressPrefix: '172.16.4.128/27'
       }
       {
         name: 'AzureFirewallSubnet'
-        addressPrefix: '10.1.0.0/26'
+        addressPrefix: '172.16.4.0/26'
       }
       {
         name: 'AzureFirewallManagementSubnet'
-        addressPrefix: '10.1.0.192/26'
+        addressPrefix: '172.16.4.192/26'
       }
       {
         name: 'DNSPrivateResolverInboundSubnet'
-        addressPrefix: '10.1.0.160/28'
+        addressPrefix: '172.16.4.160/28'
         delegation: 'Microsoft.Network/dnsResolvers'
       }
       {
         name: 'DNSPrivateResolverOutboundSubnet'
-        addressPrefix: '10.1.0.176/28'
+        addressPrefix: '172.16.4.176/28'
         delegation: 'Microsoft.Network/dnsResolvers'
       }
     ]
