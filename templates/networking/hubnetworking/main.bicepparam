@@ -84,6 +84,7 @@ param hubNetworks = [
     vpnGatewaySettings: {
       deployVpnGateway: true
       name: 'vgw-alz-${parLocations[0]}'
+      domainNameLabel: ['vgw-alz-${parLocations[0]}-fewald01']
       skuName: 'VpnGw1AZ'
       vpnMode: 'activeActiveBgp'
       vpnType: 'RouteBased'
@@ -168,6 +169,7 @@ param hubNetworks = [
     vpnGatewaySettings: {
       deployVpnGateway: true
       name: 'vgw-alz-${parLocations[1]}'
+      domainNameLabel: ['vgw-alz-${parLocations[1]}-fewald01']
       skuName: 'VpnGw1AZ'
       vpnMode: 'activeActiveBgp'
       vpnType: 'RouteBased'
